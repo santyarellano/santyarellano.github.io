@@ -8,3 +8,9 @@ header {
   padding-bottom: 1%;
   font-family: "Delius", cursive;
 }
+
+.title_div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
