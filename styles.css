@@ -1,5 +1,4 @@
 body {
-  background-color: rgb(244, 244, 244);
 }
 
 header {
@@ -16,7 +15,7 @@ header {
 #projects_div {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 4%;
+  padding-top: 3%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -30,6 +29,9 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 1.8%;
+  font-family: "Delius", cursive;
+  font-size: 2rem;
 }
 
 .project_body {

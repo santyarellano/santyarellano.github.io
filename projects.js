@@ -46,7 +46,7 @@ let projectsDiv = document.getElementById("projects_div");
 // generate html of projects
 projects.forEach((p) => {
   let itemDiv = document.createElement("div");
-  itemDiv.className = "card project_card";
+  itemDiv.className = "card shadow project_card";
   itemDiv.style.width = "18rem";
 
   if (p.icon != null) {
