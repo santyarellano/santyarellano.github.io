@@ -9,8 +9,29 @@ header {
   font-family: "Delius", cursive;
 }
 
+#projects_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project_card {
+  margin: 1rem;
+}
+
 .title_div {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+
+.icon_div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.icons {
+  font-size: 9rem;
 }
