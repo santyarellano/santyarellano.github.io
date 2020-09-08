@@ -10,14 +10,15 @@ let projects = [
     name: "Dungeon Monster",
     devs: ["Java"],
     desc: "A 2D mini platformer game.",
-    img: "cabin.png",
+    img: "dungeon_monster.png",
+    backgroundColor: "#74abfe",
   },
   {
     name: "Find The Door",
     devs: ["GMS2"],
     desc:
       "A top-to-down 2D game with gamepad, split screen, and inventory functions.",
-    img: "cabin.png",
+    icon: "gamepad",
   },
 ];
 
@@ -65,12 +66,20 @@ projects.forEach((p) => {
     itemDiv.appendChild(iconDiv);
   } else if (p.img != null) {
     // uses image
-    console.log(p.name + " img");
+    let imgDiv = document.createElement("div");
+    imgDiv.className = "project_img_div";
+    imgDiv.style.backgroundColor = p.backgroundColor;
+    let img = document.createElement("img");
+    img.className = "card-img-top project_img";
+    img.setAttribute("alt", p.name + " image.");
+    img.src = "images/" + p.img;
+    imgDiv.appendChild(img);
+    itemDiv.appendChild(imgDiv);
   }
 
   // Title
   let cardBody = document.createElement("div");
-  cardBody.className = "card-body";
+  cardBody.className = "card-body project_body";
   let cardText = document.createElement("h4");
   cardText.className = "card-text";
   cardText.innerHTML = p.name;
