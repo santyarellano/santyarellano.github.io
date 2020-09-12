@@ -2,6 +2,7 @@ let projects = [
   {
     name: "2D Game Engine",
     devs: ["C++", "Lua", "SDL2"],
+    link: "https://github.com/santyarellano/2dGameEngine",
     desc:
       "A 2D Game Engine with scripting and level/scenario generating funtionality.",
     icon: "cogs",
@@ -9,6 +10,7 @@ let projects = [
   {
     name: "Dungeon Monster",
     devs: ["Java"],
+    link: "https://github.com/santyarellano/DungeonMonster",
     desc: "A 2D mini platformer game.",
     img: "dungeon_monster.png",
     backgroundColor: "#74abfe",
@@ -16,6 +18,7 @@ let projects = [
   {
     name: "Find The Door",
     devs: ["GMS2"],
+    link: "https://github.com/santyarellano/FindTheDoor",
     desc:
       "A top-to-down 2D game with gamepad, split screen, and inventory functions.",
     icon: "gamepad",
@@ -86,6 +89,18 @@ projects.forEach((p) => {
   cardBody.appendChild(cardText);
   itemDiv.appendChild(cardBody);
 
+  // create hover div
+  let hoverDiv = document.createElement("div");
+  hoverDiv.className = "hover_div";
+  hoverDiv.onclick = function () {
+    window.open(p.link, "_blank");
+  };
+  let icon = document.createElement("i");
+  icon.className = "fas fa-plus fa-3x card_hover_icon";
+  hoverDiv.appendChild(icon);
+  itemDiv.append(hoverDiv);
+
+  // add to whole html
   projectsDiv.appendChild(itemDiv);
 });
 
