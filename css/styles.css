@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.project {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.diagonal {
+    position: relative;
+    height: 50px;
+    background: #333;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.section {
+    padding: 40px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.visible {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .project {
+        padding: 15px;
+    }
+}
