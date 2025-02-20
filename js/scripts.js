@@ -1,21 +1,9 @@
 const projects = [
     {
-        name: "Project One",
-        link: "https://example.com/project1",
-        description: "An exciting adventure game that takes players on a journey through a mystical world.",
+        name: "FRUG: A Gamedev framework for Rust",
+        link: "https://santyarellano.github.io/frug_book/",
+        description: "A simple game development framework for Rust that provides a simple API for creating games.",
         image: "images/project1.gif"
-    },
-    {
-        name: "Project Two",
-        link: "https://example.com/project2",
-        description: "A fast-paced puzzle game that challenges players to think quickly and strategically.",
-        image: "images/project2.gif"
-    },
-    {
-        name: "Project Three",
-        link: "https://example.com/project3",
-        description: "A multiplayer online battle arena game that pits players against each other in epic battles.",
-        image: "images/project3.gif"
     }
 ];
 
@@ -24,11 +12,12 @@ function loadProjects() {
     projects.forEach(project => {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
+        const imageUrl = project.image || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.link)}`;
         projectDiv.innerHTML = `
             <h2>${project.name}</h2>
             <a href="${project.link}" target="_blank">View Project</a>
             <p>${project.description}</p>
-            <img src="${project.image}" alt="${project.name}">
+            <img src="${imageUrl}" alt="${project.name}">
         `;
         projectContainer.appendChild(projectDiv);
     });
