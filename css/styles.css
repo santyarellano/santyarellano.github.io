@@ -13,8 +13,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    /* Change from relative to fixed */
+    top: 0;
+    /* Ensure it stays at the top */
+    width: 100%;
+    /* Ensure it spans the full width */
+    z-index: 1000;
+    /* Ensure it is above other content */
     overflow: hidden;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    padding-right: 2rem;
+    /* Add padding to the right side */
 }
 
 .header-content {
@@ -148,6 +159,8 @@ nav ul li a:hover {
 section {
     padding: 4rem 2rem;
     position: relative;
+    margin-top: 8rem;
+    /* Add margin to avoid content being hidden behind the fixed header */
 }
 
 section::before {
