@@ -200,6 +200,8 @@ p {
     overflow: hidden;
     width: 300px;
     transition: transform 0.3s ease;
+    padding: 1rem;
+    /* Add padding to the project cards */
 }
 
 .project:hover {
@@ -207,7 +209,7 @@ p {
 }
 
 .project img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 

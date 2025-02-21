@@ -1,10 +1,16 @@
 const projects = [
     {
-        name: "FRUG: A Gamedev framework for Rust",
+        name: "FRUG",
         link: "https://santyarellano.github.io/frug_book/",
         description: "A simple game development framework for Rust that provides a simple API for creating games.",
         image: "images/frug.gif"
-    }
+    },
+    {
+        name: "In the Grid",
+        link: "https://santyarellano.itch.io/in-the-grid",
+        description: "A simple top-down shooter mini-game made during the GGJ 2022.",
+        image: "images/in_the_grid.png"
+    },
 ];
 
 function loadProjects() {
