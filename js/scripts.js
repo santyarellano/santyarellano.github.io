@@ -3,7 +3,7 @@ const projects = [
         name: "FRUG: A Gamedev framework for Rust",
         link: "https://santyarellano.github.io/frug_book/",
         description: "A simple game development framework for Rust that provides a simple API for creating games.",
-        image: "images/project1.gif"
+        image: "images/frug.gif"
     }
 ];
 
@@ -12,12 +12,12 @@ function loadProjects() {
     projects.forEach(project => {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
-        const imageUrl = project.image || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.link)}`;
+
         projectDiv.innerHTML = `
             <h2>${project.name}</h2>
             <a href="${project.link}" target="_blank">View Project</a>
             <p>${project.description}</p>
-            <img src="${imageUrl}" alt="${project.name}">
+            <img src="${project.image}" alt="${project.name}" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
         `;
         projectContainer.appendChild(projectDiv);
     });
