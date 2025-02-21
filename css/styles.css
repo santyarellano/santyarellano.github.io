@@ -31,6 +31,13 @@ header {
     height: auto;
     border-radius: 8px;
     margin-right: 2rem;
+    box-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        4px 4px 10px rgba(0, 0, 0, 0.9);
+    /* Add shadow similar to text */
 }
 
 .welcome-message {
@@ -42,11 +49,25 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
     color: #ffcc00;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        4px 4px 10px rgba(0, 0, 0, 0.9);
+    /* Increase shadow size and reduce alpha */
 }
 
 header p {
     margin: 0.5rem 0 0;
     font-size: 1.2rem;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        4px 4px 10px rgba(0, 0, 0, 0.9);
+    /* Increase shadow size and reduce alpha */
 }
 
 nav ul {
