@@ -1,60 +1,46 @@
-# Game Developer Portfolio
+# Portfolio Website
 
-This is a portfolio website for a game developer showcasing various projects. The website is designed to be responsive and visually appealing, featuring diagonal dividers and fade effects for a smooth user experience.
+This is a portfolio website project designed to showcase personal work and experience in a colorful, video game-themed layout. The website features a collapsible navigation bar and dynamic project displays.
 
 ## Project Structure
 
-The project consists of the following files and directories:
+The project is organized as follows:
 
 ```
-game-developer-portfolio
+portfolio-website
 ├── css
-│   ├── styles.css        # Styles for the portfolio
-├── images
-│   ├── project1.gif      # GIF for the first project
-│   ├── project2.gif      # GIF for the second project
-│   └── project3.gif      # GIF for the third project
+│   ├── styles.css          # Styles for the website
 ├── js
-│   ├── scripts.js        # JavaScript for dynamic content and effects
-├── index.html            # Main HTML document for the portfolio
-└── README.md             # Project documentation
+│   ├── main.js             # Main functionality for the website
+│   ├── particles.js        # Animated pixel particle background
+│   └── projects.js         # Loads project details from JSON
+├── assets
+│   ├── images              # Contains project-related images
+│   └── gifs                # Contains project-related GIFs
+├── data
+│   └── projects.json       # JSON file with project details
+├── index.html              # Main HTML file for the portfolio
+└── README.md               # Documentation for the project
 ```
 
-## Getting Started
+## Features
 
-To set up the portfolio locally, follow these steps:
+- **Collapsible Navigation Bar**: Includes links to "About me", "Experience", "Projects", "Resume", and "Contact", along with buttons linking to GitHub, LinkedIn, and itch.io profiles.
+- **Dynamic Projects Section**: Projects are loaded from a JSON file, displaying title, description, image/GIF, and a link to each project.
+- **Colorful Animated Background**: The projects section features a vibrant, animated pixel particle background to enhance visual appeal.
 
-1. **Clone the Repository**: 
-   ```
-   git clone <repository-url>
-   cd game-developer-portfolio
-   ```
+## Setup Instructions
 
-2. **Open `index.html`**: You can open the `index.html` file in your web browser to view the portfolio.
+1. Clone the repository to your local machine.
+2. Open `index.html` in your web browser to view the portfolio.
+3. Customize the `projects.json` file in the `data` directory to add your own projects.
+4. Update the `assets/images` and `assets/gifs` folders with your project images and GIFs.
 
-3. **Customize the Portfolio**:
-   - Edit the `index.html` file to add or modify project entries.
-   - Update the `css/styles.css` file to change styles as needed.
-   - Modify `js/scripts.js` for any interactive features or to load new project data dynamically.
+## Technologies Used
 
-## Adding New Projects
+- HTML
+- CSS
+- JavaScript
+- JSON
 
-To add a new project to the portfolio:
-
-1. Add a new image or GIF to the `images` directory.
-2. Update the `index.html` file to include a new section for the project, using the following template:
-
-   ```html
-   <div class="project">
-       <h2>Project Name</h2>
-       <a href="project-link.html">View Project</a>
-       <p>Short description of the project.</p>
-       <img src="images/new-project.gif" alt="Project Name">
-   </div>
-   ```
-
-3. Ensure that the new project section follows the existing layout and styling.
-
-## License
-
-This project is open-source and available for use and modification. Feel free to contribute or customize it for your own portfolio needs.
+Feel free to explore and modify the project as needed!

@@ -1,318 +1,115 @@
-/* General Styles */
+/* filepath: /portfolio-website/portfolio-website/css/styles.css */
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Press Start 2P';
+    background-color: #1a1a1a;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
 }
 
 header {
-    background-color: #000;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    /* Change from relative to fixed */
-    top: 0;
-    /* Ensure it stays at the top */
-    width: 100%;
-    /* Ensure it spans the full width */
-    z-index: 1000;
-    /* Ensure it is above other content */
-    overflow: hidden;
-    box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
-    padding-right: 2rem;
-    /* Add padding to the right side */
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 1;
-    /* Ensure header content is above particles */
-}
-
-.profile-pic {
-    width: 20%;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 2rem;
-    box-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        4px 4px 10px rgba(0, 0, 0, 0.9);
-    /* Add shadow similar to text */
-    transition: opacity 0.5s ease-in-out;
-}
-
-.profile-pic.minimized {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.welcome-message {
-    flex-grow: 1;
-    text-align: left;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #ffcc00;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        4px 4px 10px rgba(0, 0, 0, 0.9);
-    /* Increase shadow size and reduce alpha */
-}
-
-header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        4px 4px 10px rgba(0, 0, 0, 0.9);
-    /* Increase shadow size and reduce alpha */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        4px 4px 10px rgba(0, 0, 0, 0.9);
-    /* Add shadow similar to text */
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Floating Particles */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.8;
-        /* Match the final opacity of the particles */
-    }
-}
-
-.particle {
-    position: absolute;
-    background-color: #fa82fa;
-    border-radius: 35%;
-    animation: float ease-in-out infinite, fadeIn 2s forwards;
-    opacity: 0.5;
-    z-index: 0;
-    /* Ensure particles are behind header content */
-}
-
-.particle:nth-child(2n) {
-    background-color: #7adc7a;
-}
-
-.particle:nth-child(3n) {
-    background-color: #80e3fc;
-}
-
-/* Section Styles */
-section {
-    padding: 4rem 2rem;
+    background-color: #333;
+    padding: 10px;
     position: relative;
-    margin-top: 8rem;
-    /* Add margin to avoid content being hidden behind the fixed header */
 }
 
-section::before {
-    content: '';
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border: 1px solid #555;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    background-color: #555;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #666;
+}
+
+section {
+    padding: 20px;
+}
+
+#projects {
+    position: relative;
+    overflow: hidden;
+}
+
+.particle-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: inherit;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     z-index: -1;
 }
 
-#about {
-    background: linear-gradient(135deg, #333333 50%, #1e1e1e 50%);
-}
-
-#projects {
-    background: linear-gradient(135deg, #1e1e1e 50%, #333333 50%);
-}
-
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ffcc00;
-}
-
-p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.project {
+.project-card {
     background-color: #222;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 300px;
-    max-height: 400px;
-    /* Set a maximum height for the project cards */
-    transition: transform 0.3s ease;
-    padding: 0.3rem 1rem 1rem;
-    /* Add padding to the project cards */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s;
 }
 
-.project:hover {
+.project-card:hover {
     transform: scale(1.05);
 }
 
-.project img {
-    height: auto;
-    max-height: 200px;
+.project-image {
     width: 100%;
-    object-fit: contain;
-    /* Ensure the image fits within the area without being cropped */
-    /* Adjust the width to maintain aspect ratio */
+    border-radius: 10px;
 }
 
-.project h2 {
-    font-size: 1.2rem;
-    /* Reduce the font size of the project title */
-    margin-bottom: 0.5rem;
-    /* Reduce the margin between the title and the description */
+.project-title {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-.project p {
-    font-size: 1rem;
-    /* Reduce the font size of the project description */
-    margin-top: 0;
-    /* Remove the top margin of the description */
-    color: rgba(255, 255, 255, 0.7);
-    /* Add a very small alpha factor to the text color */
+.project-description {
+    font-size: 1em;
+    margin: 10px 0;
 }
 
-.project-content {
-    padding: 1rem;
-}
-
-.project-content h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #ffcc00;
-}
-
-.project-content p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-}
-
-.project-content a {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #ffcc00;
-    color: #000;
+.project-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
 
-.project-content a:hover {
-    background-color: #e6b800;
-}
-
-.view-project-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #ffcc00;
-    color: #000;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    align-self: center;
-    /* Center the button horizontally */
-}
-
-.view-project-button:hover {
-    background-color: #e6b800;
-}
-
-footer {
-    background-color: #1e1e1e;
-    text-align: center;
-    padding: 1rem;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
+.project-button:hover {
+    background-color: #0056b3;
 }
