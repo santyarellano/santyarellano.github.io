@@ -65,10 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
+    const profile_pic = document.querySelector('.profile-pic');
     if (window.scrollY > 50) {
         header.classList.add('minimized');
+        profile_pic.classList.add('minimized');
     } else {
         header.classList.remove('minimized');
+        profile_pic.classList.remove('minimized');
     }
 });
 
