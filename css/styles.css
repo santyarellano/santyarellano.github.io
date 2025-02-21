@@ -8,17 +8,12 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #1e1e1e 50%, #333333 50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 255, 0, 0.5));
     padding: 2rem;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: background 1s ease-in-out;
-}
-
-header:hover {
-    background: linear-gradient(135deg, #1e1e1e 50%, #00ff00 50%);
 }
 
 .header-content {
@@ -29,14 +24,15 @@ header:hover {
 }
 
 .profile-pic {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
     margin-right: 2rem;
 }
 
 .welcome-message {
     flex-grow: 1;
+    text-align: left;
 }
 
 header h1 {
