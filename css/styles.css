@@ -87,6 +87,13 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        4px 4px 10px rgba(0, 0, 0, 0.9);
+    /* Add shadow similar to text */
 }
 
 nav ul li a:hover {
@@ -121,7 +128,7 @@ nav ul li a:hover {
 
 .particle {
     position: absolute;
-    background-color: #ffcc00;
+    background-color: #fa82fa;
     border-radius: 35%;
     animation: float ease-in-out infinite, fadeIn 2s forwards;
     opacity: 0.5;
@@ -130,15 +137,11 @@ nav ul li a:hover {
 }
 
 .particle:nth-child(2n) {
-    background-color: #00ff00;
+    background-color: #7adc7a;
 }
 
 .particle:nth-child(3n) {
-    background-color: #00ccff;
-}
-
-.particle:nth-child(4n) {
-    background-color: #ff00ff;
+    background-color: #80e3fc;
 }
 
 /* Section Styles */
