@@ -33,7 +33,19 @@ function fadeInSections() {
     });
 }
 
+function createParticles() {
+    const header = document.querySelector('header');
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.left = `${Math.random() * 100}%`;
+        header.appendChild(particle);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
     fadeInSections();
+    createParticles();
 });
