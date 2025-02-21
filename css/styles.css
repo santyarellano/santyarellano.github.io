@@ -199,8 +199,10 @@ p {
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
+    max-height: 400px;
+    /* Set a maximum height for the project cards */
     transition: transform 0.3s ease;
-    padding: 1rem;
+    padding: 0.3rem 1rem 1rem;
     /* Add padding to the project cards */
     display: flex;
     flex-direction: column;
@@ -212,8 +214,28 @@ p {
 }
 
 .project img {
-    width: auto;
     height: auto;
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    /* Ensure the image fits within the area without being cropped */
+    /* Adjust the width to maintain aspect ratio */
+}
+
+.project h2 {
+    font-size: 1.2rem;
+    /* Reduce the font size of the project title */
+    margin-bottom: 0.5rem;
+    /* Reduce the margin between the title and the description */
+}
+
+.project p {
+    font-size: 1rem;
+    /* Reduce the font size of the project description */
+    margin-top: 0;
+    /* Remove the top margin of the description */
+    color: rgba(255, 255, 255, 0.7);
+    /* Add a very small alpha factor to the text color */
 }
 
 .project-content {
