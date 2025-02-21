@@ -22,6 +22,8 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 1;
+    /* Ensure header content is above particles */
 }
 
 .profile-pic {
@@ -85,29 +87,37 @@ nav ul li a:hover {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+        /* Match the final opacity of the particles */
+    }
+}
+
 .particle {
     position: absolute;
-    width: 5px;
-    height: 5px;
     background-color: #ffcc00;
-    border-radius: 50%;
-    animation: float 4s ease-in-out infinite;
-    opacity: 0.8;
+    border-radius: 35%;
+    animation: float ease-in-out infinite, fadeIn 2s forwards;
+    opacity: 0.5;
+    z-index: 0;
+    /* Ensure particles are behind header content */
 }
 
 .particle:nth-child(2n) {
     background-color: #00ff00;
-    animation-duration: 6s;
 }
 
 .particle:nth-child(3n) {
     background-color: #00ccff;
-    animation-duration: 5s;
 }
 
 .particle:nth-child(4n) {
     background-color: #ff00ff;
-    animation-duration: 7s;
 }
 
 /* Section Styles */
