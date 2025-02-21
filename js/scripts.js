@@ -21,8 +21,8 @@ function loadProjects() {
 
         projectDiv.innerHTML = `
             <h2>${project.name}</h2>
-            <a href="${project.link}" target="_blank">View Project</a>
             <p>${project.description}</p>
+            <a href="${project.link}" target="_blank" class="view-project-button">View Project</a>
             <img src="${project.image}" alt="${project.name}" onerror="this.onerror=null;this.src='default-thumbnail.jpg';">
         `;
         projectContainer.appendChild(projectDiv);
