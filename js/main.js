@@ -10,10 +10,10 @@ const socialMediaData = [
         "color": "#0000FF"
     },
     {
-        "Item": "Github",
-        "link": "https://github.com/santyarellano",
-        "icon": "fa-github",
-        "color": "#000000"
+        "Item": "Twitter",
+        "link": "https://twitter.com/santyarellano",
+        "icon": "fa-twitter",
+        "color": "#1DA1F2"
     }
 ];
 
