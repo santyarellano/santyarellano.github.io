@@ -7,7 +7,6 @@ body {
 }
 
 /* -------------- IDS -------------- */
-
 #social-media {
     display: flex;
     align-items: center;
@@ -22,6 +21,28 @@ body {
 }
 
 /* -------------- CLASSES -------------- */
+.button3d {
+    background: hsl(222, 85%, 24%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    outline-offset: 4px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+}
+
+.button3d h2 {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(222, 100%, 56%);
+    color: rgb(252, 252, 252);
+    transform: translateY(-6px);
+}
 
 .custom-navbar {
     background-color: rgba(0, 0, 0, 0.8);

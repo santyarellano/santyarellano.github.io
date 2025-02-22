@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     createParticles(document.body, colors, numParticles);
 });
 
+// ================== DATA ==================
 const socialMediaData = [
     {
         "Item": "LinkedIn",
@@ -20,6 +21,22 @@ const socialMediaData = [
         "color": "#ADD8E6" // light blue
     }
 ];
+
+const projectsData = [
+    {
+        "name": "FRUG",
+        "description": "A simple game dev framework for Rust.",
+        "asset": "assets/gifs/frug.gif",
+        "link": "https://santyarellano.github.io/frug_book/"
+    },
+    {
+        "name": "In The Grid",
+        "description": "A game made for the Global Game Jam '22. Top down shooter made with original assets (music and sprites).",
+        "asset": "assets/gifs/snake.gif",
+        "link": "https://santyarellano.itch.io/in-the-grid"
+    }
+];
+// ================== DATA ==================
 
 function loadSocialMediaIcons() {
     const socialMediaContainer = document.getElementById('social-media');
