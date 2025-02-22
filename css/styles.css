@@ -7,6 +7,10 @@ body {
 }
 
 /* -------------- IDS -------------- */
+#projects {
+    animation: fadeIn 1s forwards;
+}
+
 #social-media {
     display: flex;
     align-items: center;
@@ -64,6 +68,7 @@ body {
     animation: moveUpDown infinite alternate ease-in-out, fadeIn 1s forwards;
 }
 
+/* -------------- KEYFRAMES -------------- */
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
@@ -75,6 +80,10 @@ body {
 }
 
 @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
     to {
         opacity: var(--final-opacity, 1);
         /* Use custom property for final opacity */
