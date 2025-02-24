@@ -38,6 +38,13 @@ const projectsData = [
         "asset": "assets/images/ms_glitch.png",
         "link": "https://santyarellano.itch.io/in-the-grid",
         "classes": "no-interpolation"
+    },
+    {
+        "name": "Kings of Wings",
+        "description": "My first finished and published game while I was a student. Includes local multiplayer, story mode, character/map selector, etc.",
+        "asset": "assets/images/kings_of_wings.png",
+        "link": "https://store.steampowered.com/app/1162820/Kings_Of_Wings/",
+        "classes": ""
     }
 ];
 // ================== DATA ==================
@@ -79,9 +86,9 @@ function loadProjects() {
         const projectElement = document.createElement('div');
         projectElement.className = 'col-md-4 mb-4';
         projectElement.innerHTML = `
-            <div class="card text-center h-60">
+            <div class="card text-center h-100">
                 <div class="card-body">
-                    <h5 class="card-title">${project.name}</h5>
+                    <h4 class="card-title"><strong>${project.name}</strong></h4>
                     <img src="${project.asset}" class="card-img-top ${project.classes}" alt="${project.name}">
                     <hr>
                     <p class="card-text">${project.description}</p>
