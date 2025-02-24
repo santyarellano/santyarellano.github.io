@@ -79,7 +79,7 @@ function loadProjects() {
         const projectElement = document.createElement('div');
         projectElement.className = 'col-md-4 mb-4';
         projectElement.innerHTML = `
-            <div class="card text-center h-100">
+            <div class="card text-center h-60">
                 <div class="card-body">
                     <h5 class="card-title">${project.name}</h5>
                     <img src="${project.asset}" class="card-img-top ${project.classes}" alt="${project.name}">
