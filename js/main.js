@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const colors = ['#d04fff', '#59a7ff', '#71f579'];
     const numParticles = 100;
     createParticles(document.body, colors, numParticles);
+
+    loadProjects();
 });
 
 // ================== DATA ==================
@@ -25,14 +27,14 @@ const socialMediaData = [
 const projectsData = [
     {
         "name": "FRUG",
-        "description": "A simple game dev framework for Rust.",
+        "description": "A simple game dev framework for Rust, with a focus on documentation, including tutorials and examples for easy learning.",
         "asset": "assets/gifs/frug.gif",
         "link": "https://santyarellano.github.io/frug_book/"
     },
     {
         "name": "In The Grid",
-        "description": "A game made for the Global Game Jam '22. Top down shooter made with original assets (music and sprites).",
-        "asset": "assets/gifs/snake.gif",
+        "description": "A game made for the Global Game Jam 2022. Top down shooter made with original assets (music and sprites).",
+        "asset": "assets/images/ms_glitch.png",
         "link": "https://santyarellano.itch.io/in-the-grid"
     }
 ];
@@ -67,4 +69,27 @@ function createParticles(container, colors, numParticles) {
         particle.style.setProperty('--final-opacity', Math.random().toFixed(2)); // random final opacity between 0 and 1
         container.appendChild(particle);
     }
+}
+
+function loadProjects() {
+    const projectsContainer = document.getElementById('projects-container');
+    projectsData.forEach(project => {
+        const projectElement = document.createElement('div');
+        projectElement.className = 'col-md-4 mb-4';
+        projectElement.innerHTML = `
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h5 class="card-title">${project.name}</h5>
+                    <img src="${project.asset}" class="card-img-top" alt="${project.name}">
+                    <hr>
+                    <p class="card-text">${project.description}</p>
+                </div>
+                
+                <div class="card-footer">
+                    <a href="${project.link}" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+        `;
+        projectsContainer.appendChild(projectElement);
+    });
 }

@@ -1,7 +1,6 @@
 body {
     background-color: black;
     margin: 0;
-    overflow: hidden;
     position: relative;
     /* Ensure particles are positioned relative to the body */
 }
@@ -46,6 +45,14 @@ body {
     background: hsl(222, 100%, 56%);
     color: rgb(252, 252, 252);
     transform: translateY(-6px);
+}
+
+.card {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    color: white;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: rgb(178, 219, 251);
 }
 
 .custom-navbar {
