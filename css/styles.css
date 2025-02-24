@@ -24,6 +24,10 @@ body {
 }
 
 /* -------------- CLASSES -------------- */
+.about-card {
+    padding: 2rem 0px;
+}
+
 .button3d {
     background: hsl(222, 85%, 24%);
     border-radius: 12px;
@@ -86,6 +90,13 @@ body {
     border-radius: 35%;
     z-index: -1;
     animation: moveUpDown infinite alternate ease-in-out, fadeIn 1s forwards;
+}
+
+.profile-pic {
+    border-radius: 4%;
+    border-color: rgb(178, 219, 251);
+    height: 15rem;
+    width: auto;
 }
 
 /* -------------- KEYFRAMES -------------- */
