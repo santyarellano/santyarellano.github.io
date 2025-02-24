@@ -34,7 +34,7 @@ const projectsData = [
     },
     {
         "name": "In The Grid",
-        "description": "A game made for the Global Game Jam 2022. Top down shooter made with original assets (music and sprites).",
+        "description": "A game made for the Global Game Jam 2022. Top down shooter made with original assets (music and sprites). Won best game of that jam region (sponsored by TLM)",
         "asset": "assets/images/ms_glitch.png",
         "link": "https://santyarellano.itch.io/in-the-grid",
         "classes": "no-interpolation"
