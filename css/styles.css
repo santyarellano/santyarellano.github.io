@@ -64,6 +64,13 @@ body {
     text-align: right;
 }
 
+.no-interpolation {
+    image-rendering: pixelated;
+    /* For modern browsers */
+    image-rendering: crisp-edges;
+    /* For older browsers */
+}
+
 .particle {
     position: absolute;
     width: 10px;

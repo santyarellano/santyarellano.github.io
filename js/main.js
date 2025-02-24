@@ -29,13 +29,15 @@ const projectsData = [
         "name": "FRUG",
         "description": "A simple game dev framework for Rust, with a focus on documentation, including tutorials and examples for easy learning.",
         "asset": "assets/gifs/frug.gif",
-        "link": "https://santyarellano.github.io/frug_book/"
+        "link": "https://santyarellano.github.io/frug_book/",
+        "classes": "no-interpolation"
     },
     {
         "name": "In The Grid",
         "description": "A game made for the Global Game Jam 2022. Top down shooter made with original assets (music and sprites).",
         "asset": "assets/images/ms_glitch.png",
-        "link": "https://santyarellano.itch.io/in-the-grid"
+        "link": "https://santyarellano.itch.io/in-the-grid",
+        "classes": "no-interpolation"
     }
 ];
 // ================== DATA ==================
@@ -80,7 +82,7 @@ function loadProjects() {
             <div class="card text-center h-100">
                 <div class="card-body">
                     <h5 class="card-title">${project.name}</h5>
-                    <img src="${project.asset}" class="card-img-top" alt="${project.name}">
+                    <img src="${project.asset}" class="card-img-top ${project.classes}" alt="${project.name}">
                     <hr>
                     <p class="card-text">${project.description}</p>
                 </div>
