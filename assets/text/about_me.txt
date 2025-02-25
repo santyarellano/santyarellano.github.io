@@ -1,5 +1,5 @@
 <strong>Hey there!</strong>
-I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old and started making games in Flash!
+I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old and started making games with Flash!
 
 Game development is my true passion. I’ve published a few games, won some awards, and am constantly working toward my ultimate dream: making games full-time!
 
