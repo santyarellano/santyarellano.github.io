@@ -72,6 +72,7 @@ const experienceData = [
     {
         "Title": "Software Engineer",
         "Company": "Microsoft",
+        "icon": "fa-brands fa-microsoft",
         "StartDate": "Oct 2023",
         "EndDate": "",
         "IsCurrent": true,
@@ -81,6 +82,7 @@ const experienceData = [
     {
         "Title": "Software Engineering Intern",
         "Company": "Twitter",
+        "icon": "fa-brands fa-twitter",
         "StartDate": "Sep 2022",
         "EndDate": "Nov 2022",
         "IsCurrent": false,
@@ -90,6 +92,7 @@ const experienceData = [
     {
         "Title": "Software Engineering Intern",
         "Company": "Microsoft",
+        "icon": "fa-brands fa-microsoft",
         "StartDate": "Jun 2022",
         "EndDate": "Sep 2022",
         "IsCurrent": false,
@@ -108,6 +111,7 @@ const experienceData = [
     {
         "Title": "Software Engineering Intern",
         "Company": "Twitter",
+        "icon": "fa-brands fa-twitter",
         "StartDate": "Jun 2021",
         "EndDate": "Aug 2022",
         "IsCurrent": false,
@@ -193,7 +197,10 @@ function loadExperience() {
         experienceElement.innerHTML = `
             <div class="card text-center h-100">
                 <div class="card-body">
-                    <h4 class="card-title"><strong>${experience.Company}</strong></h4>
+                    <h4 class="card-title">
+                        <i class="${experience.icon}"></i>
+                        <strong>${experience.Company}</strong>
+                    </h4>
                     <h5 class="card-subtitle mb-2 text-muted">${experience.Title}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${dates}</h6>
                     <hr>
