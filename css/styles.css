@@ -21,7 +21,7 @@ body {
 
 /* -------------- CLASSES -------------- */
 .about-card {
-    padding: 2rem 0px;
+    padding: 1rem 1.3rem;
 }
 
 .button3d {
@@ -99,6 +99,8 @@ body {
     border-color: rgb(178, 219, 251);
     height: 15rem;
     width: auto;
+    float: left;
+    margin: 0 1rem 1rem 0;
 }
 
 /* -------------- KEYFRAMES -------------- */

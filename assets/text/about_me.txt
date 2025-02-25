@@ -1,4 +1,5 @@
-Hey there! I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old. Ever since, I’ve been hooked on creating things with code!
+<strong>Hey there!</strong>
+I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old. Ever since, I’ve been hooked on creating things with code!
 
 Game development is my true passion. I’ve published a few games, won some awards, and am constantly working toward my ultimate dream: making games full-time. There’s just something magical about bringing a world to life with code and creativity.
 
