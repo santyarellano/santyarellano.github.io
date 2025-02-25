@@ -1,7 +1,7 @@
 <strong>Hey there!</strong>
 I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old and started making games with Flash!
 
-Game development is my true passion. I’ve published a few games, won some awards, and am constantly working toward my ultimate dream: making games full-time!
+Game development is my true passion. I’ve published a few games, won some awards, and I'm constantly working toward my ultimate dream: making games full-time!
 
 What makes me unique as a developer is that I’m always pushing myself to learn and innovate. For example, I don't just build games—I built my own game engine and framework (called FRUG) to give me more control and flexibility. You can check it out in the "Projects" section if you're curious!
 
