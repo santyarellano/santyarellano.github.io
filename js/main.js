@@ -72,45 +72,45 @@ const experienceData = [
     {
         "Title": "Software Engineer",
         "Company": "Microsoft",
-        "Start Date": "Oct 2023",
-        "End Date": "",
-        "Is Current": true,
+        "StartDate": "Oct 2023",
+        "EndDate": "",
+        "IsCurrent": true,
         "Location": "Redmond, WA",
         "Description": "Working on custom access proxies development for security products (Global Secure Access service). My day to day includes working with C# and Rust and usually involves tasks related to encryption, networking, and performance."
     },
     {
         "Title": "Software Engineering Intern",
         "Company": "Twitter",
-        "Start Date": "Sep 2022",
-        "End Date": "Nov 2022",
-        "Is Current": false,
+        "StartDate": "Sep 2022",
+        "EndDate": "Nov 2022",
+        "IsCurrent": false,
         "Location": "Remote",
         "Description": "Worked on the Notifications team, integrating a sensor & ML framework to improve user interaction. Unfortunately the project was interrupted by the Elon Musk acquisition and the project was shut down."
     },
     {
         "Title": "Software Engineering Intern",
         "Company": "Microsoft",
-        "Start Date": "Jun 2022",
-        "End Date": "Sep 2022",
-        "Is Current": false,
+        "StartDate": "Jun 2022",
+        "EndDate": "Sep 2022",
+        "IsCurrent": false,
         "Location": "Redmond, WA",
         "Description": "Worked on Identity and Access Management team. Implemented a new feature to verify and monitor the access of users to a given resource tree. The feature was implemented in C# and KnockoutJs."
     },
     {
         "Title": "Software Engineering Intern",
         "Company": "Oracle",
-        "Start Date": "Sep 2021",
-        "End Date": "Mar 2022",
-        "Is Current": false,
+        "StartDate": "Sep 2021",
+        "EndDate": "Mar 2022",
+        "IsCurrent": false,
         "Location": "Remote",
         "Description": "Worked on test development for a new product. My day to day job involved python scripting and C & SQL for tests."
     },
     {
         "Title": "Software Engineering Intern",
         "Company": "Twitter",
-        "Start Date": "Jun 2021",
-        "End Date": "Aug 2022",
-        "Is Current": false,
+        "StartDate": "Jun 2021",
+        "EndDate": "Aug 2022",
+        "IsCurrent": false,
         "Location": "Remote",
         "Description": "Worked the chats platform team. Implemented the button to scroll to the bottom in a conversation, and pin conversation features. Also improved the way tweets were displayed in a conversation. Usually worked with Kotlin, Java, and XML."
     }
@@ -187,12 +187,14 @@ function loadProjects() {
 function loadExperience() {
     const experienceContainer = document.getElementById('experience-container');
     experienceData.forEach(experience => {
+        const dates = experience.IsCurrent ? `${experience.StartDate} - Present` : `${experience.StartDate} - ${experience.EndDate}`;
         const experienceElement = document.createElement('div');
         experienceElement.className = 'col-md-4 mb-4';
         experienceElement.innerHTML = `
             <div class="card text-center h-100">
                 <div class="card-body">
-                    <h4 class="card-title"><strong>${experience.Title}</strong></h4>
+                    <h4 class="card-title"><strong>${experience.Company}</strong></h4>
+                    <h6 class="card-subtitle mb-2 text-muted">${dates}</h6>
                     <hr>
                     <p class="card-text">${experience.Description}</p>
                 </div>
