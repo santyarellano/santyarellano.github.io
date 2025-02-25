@@ -13,13 +13,19 @@ const socialMediaData = [
     {
         "Item": "LinkedIn",
         "link": "https://www.linkedin.com/in/s-arellano/",
-        "icon": "fa-linkedin-square",
+        "icon": "fa fa-linkedin-square",
         "color": "#ADD8E6" // light blue
     },
     {
         "Item": "Github",
         "link": "https://github.com/santyarellano",
-        "icon": "fa-github",
+        "icon": "fa fa-github",
+        "color": "#ADD8E6" // light blue
+    },
+    {
+        "Item": "Itch",
+        "link": "https://santyarellano.itch.io",
+        "icon": "fa-brands fa-itch-io",
         "color": "#ADD8E6" // light blue
     }
 ];
