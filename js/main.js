@@ -87,7 +87,7 @@ const experienceData = [
         "EndDate": "Nov 2022",
         "IsCurrent": false,
         "Location": "Remote",
-        "Description": "Worked on the Notifications team, integrating a sensor & ML framework to improve user interaction. Unfortunately the project was interrupted by the Elon Musk acquisition and the project was shut down."
+        "Description": "Worked on the Notifications team, integrating a sensor & ML framework to improve user interaction. Beyond that main project, helped to migrate a platform acquired by the company into Twitter by writing an API for it."
     },
     {
         "Title": "Software Engineering Intern",
