@@ -17,9 +17,9 @@ const socialMediaData = [
         "color": "#ADD8E6" // light blue
     },
     {
-        "Item": "Twitter",
-        "link": "https://twitter.com/santyarellano",
-        "icon": "fa-twitter",
+        "Item": "Github",
+        "link": "https://github.com/santyarellano",
+        "icon": "fa-github",
         "color": "#ADD8E6" // light blue
     }
 ];
