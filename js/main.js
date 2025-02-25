@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // particles
     const colors = ['#d04fff', '#59a7ff', '#71f579'];
-    const numParticles = 100;
+    const numParticles = 150;
     createParticles(document.body, colors, numParticles);
 });
 
@@ -143,12 +143,14 @@ function loadSocialMediaIcons() {
 }
 
 function createParticles(container, colors, numParticles) {
+    const bodyHeight = document.body.scrollHeight; // Full height of the body
+
     for (let i = 0; i < numParticles; i++) {
         const particle = document.createElement('div');
         particle.classList.add('particle');
         particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         particle.style.left = `${Math.random() * 100}vw`;
-        particle.style.top = `${Math.random() * 100}vh`;
+        particle.style.top = `${Math.random() * bodyHeight}px`;
         particle.style.width = `${Math.random() * 20 + 10}px`; // random width between 10px and 30px
         particle.style.height = particle.style.width; // make height equal to width for a square shape
         particle.style.animationDelay = `${Math.random() * 3}s`; // random delay between 0s and 3s for movement
