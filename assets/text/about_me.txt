@@ -1,0 +1,9 @@
+Hey there! I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old. Ever since, I’ve been hooked on creating things with code!
+
+Game development is my true passion. I’ve published a few games, won some awards, and am constantly working toward my ultimate dream: making games full-time. There’s just something magical about bringing a world to life with code and creativity.
+
+What makes me unique as a developer is that I’m always pushing myself to learn and innovate. For example, I didn’t just build games—I built my own game engine and framework (called FRUG) to give me more control and flexibility. You can check it out in the "Projects" section if you're curious!
+
+But hey, I’m not just a programmer—I’m also a one-person game studio. I love designing my own pixel art (even though I’m no professional artist), and I enjoy composing the music for my games too. I’ve been playing guitar, piano, and violin since before I started coding, so it’s been great to merge those worlds.
+
+Overall, I’m always excited to learn, experiment, and create. I can’t wait to see where my game development journey takes me next!

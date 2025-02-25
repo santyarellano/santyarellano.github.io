@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const numParticles = 100;
     createParticles(document.body, colors, numParticles);
 
+    loadAboutMeText();
     loadProjects();
 });
 
