@@ -192,7 +192,9 @@ function loadExperience() {
         experienceElement.innerHTML = `
             <div class="card text-center h-100">
                 <div class="card-body">
-                    <h4 class="card-title>${experience.Title}</h4>
+                    <h4 class="card-title"><strong>${experience.Title}</strong></h4>
+                    <hr>
+                    <p class="card-text">${experience.Description}</p>
                 </div>
             </div>
         `;
