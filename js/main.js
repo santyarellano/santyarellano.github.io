@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadSocialMediaIcons();
     loadAboutMeText();
     loadProjects();
+    loadExperience();
 
     // particles
     const colors = ['#d04fff', '#59a7ff', '#71f579'];
@@ -180,5 +181,22 @@ function loadProjects() {
             </div>
         `;
         projectsContainer.appendChild(projectElement);
+    });
+}
+
+function loadExperience() {
+    const experienceContainer = document.getElementById('experience-container');
+    experienceData.forEach(experience => {
+        const experienceElement = document.createElement('div');
+        experienceElement.className = 'col-md-4 mb-4';
+        experienceElement.innerHTML = `
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h4 class="card-title>${experience.Title}</h4>
+                </div>
+            </div>
+        `;
+
+        experienceContainer.appendChild(experienceElement);
     });
 }
