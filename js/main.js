@@ -194,6 +194,7 @@ function loadExperience() {
             <div class="card text-center h-100">
                 <div class="card-body">
                     <h4 class="card-title"><strong>${experience.Company}</strong></h4>
+                    <h5 class="card-subtitle mb-2 text-muted">${experience.Title}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${dates}</h6>
                     <hr>
                     <p class="card-text">${experience.Description}</p>
