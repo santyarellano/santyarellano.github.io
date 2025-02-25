@@ -56,6 +56,17 @@ const projectsData = [
 ];
 // ================== DATA ==================
 
+function loadAboutMeText() {
+    const url = 'https://raw.githubusercontent.com/santyarellano/santyarellano.github.io/refs/heads/master/assets/text/about_me.txt';
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            const formattedText = data.replace(/\n/g, '<br>').replace(/\r/g, '');
+            document.getElementById("about-me-text").innerHTML = formattedText;
+        })
+        .catch(error => console.error('Error loading file:', error));
+}
+
 function loadSocialMediaIcons() {
     const socialMediaContainer = document.getElementById('social-media');
     socialMediaData.forEach(item => {
