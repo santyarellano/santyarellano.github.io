@@ -65,6 +65,20 @@ const projectsData = [
         "asset": "assets/images/kings_of_wings.png",
         "link": "https://store.steampowered.com/app/1162820/Kings_Of_Wings/",
         "classes": ""
+    },
+    {
+        "name": "UNROOTED",
+        "description": "2.5D infection-shooter game with local network multiplayer (P2P networking using UDP protocol), made for GGJ2023 with a team.",
+        "asset": "assets/images/unrooted.png",
+        "link": "https://v3.globalgamejam.org/2023/games/unrooted-0",
+        "classes": ""
+    },
+    {
+        "name": "Shattered",
+        "description": "My first game jam game. Made with a team and using Godot. It was a simple 2D Platformer attempting to narrate a story. Made for GGJ2021",
+        "asset": "assets/images/shattered.jpg",
+        "link": "https://v3.globalgamejam.org/2021/games/shattered-5",
+        "classes": ""
     }
 ];
 
