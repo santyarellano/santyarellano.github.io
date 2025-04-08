@@ -60,6 +60,13 @@ const projectsData = [
         "classes": "no-interpolation"
     },
     {
+        "name": "Work-Life Balance",
+        "description": "A game made for the LD57 jam under 48 hours. A simple balance game where players have to balance their work, dreams, and health. Made with original assets.",
+        "asset": "assets/images/wlb.png",
+        "link": "https://santyarellano.itch.io/ld-57",
+        "classes": "no-interpolation"
+    },
+    {
         "name": "Kings of Wings",
         "description": "My first finished and published game while I was a student. Includes local multiplayer, story mode, character/map selector, etc.",
         "asset": "assets/images/kings_of_wings.png",
