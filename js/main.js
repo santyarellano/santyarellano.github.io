@@ -46,13 +46,6 @@ const socialMediaData = [
 
 const projectsData = [
     {
-        "name": "FRUG",
-        "description": "A simple game dev framework for Rust, with a focus on documentation, including tutorials and examples for easy learning.",
-        "asset": "assets/gifs/frug.gif",
-        "link": "https://santyarellano.github.io/frug_book/",
-        "classes": "no-interpolation"
-    },
-    {
         "name": "In The Grid",
         "description": "A game made for the Global Game Jam 2022. Top down shooter made with original assets (music and sprites). Won best game of that jam region (sponsored by TLM)",
         "asset": "assets/images/ms_glitch.png",
@@ -72,6 +65,13 @@ const projectsData = [
         "asset": "assets/images/kings_of_wings.png",
         "link": "https://store.steampowered.com/app/1162820/Kings_Of_Wings/",
         "classes": ""
+    },
+    {
+        "name": "FRUG",
+        "description": "A simple game dev framework for Rust, with a focus on documentation, including tutorials and examples for easy learning.",
+        "asset": "assets/gifs/frug.gif",
+        "link": "https://santyarellano.github.io/frug_book/",
+        "classes": "no-interpolation"
     },
     {
         "name": "UNROOTED",
