@@ -1,27 +1,12 @@
 <strong>Hey there!</strong>
-I'm a software engineer at Microsoft, currently diving deep into backend systems, cloud
-architecture, and security. I graduated in 2023 with a degree in Computer Science, but
-my coding journey actually started when I was around 10 years old, building small games
-with Flash.
+I'm a software engineer at Microsoft, currently diving deep into backend systems, cloud architecture, and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old, building small games with Flash.
 
-While game development was my first love and remains a strong creative outlet, it
-ultimately sparked a lifelong passion for solving complex technical problems and
-building robust software.
+While game development was my first love and remains a strong creative outlet, it ultimately sparked a lifelong passion for solving complex technical problems and building robust software.
 
-What drives me as a developer is a constant desire to learn, innovate, and understand
-how things work under the hood. For example, rather than just relying on existing tools
-for my projects, I built my own framework from scratch (called FRUG) to gain deeper
-control and flexibility over the system architecture. You can check it out in the
-"Projects" section if you're curious!
+What drives me as a developer is a constant desire to learn, innovate, and understand how things work under the hood. For example, rather than just relying on existing tools for my projects, I built my own framework from scratch (called FRUG) to gain deeper control and flexibility over the system architecture. You can check it out in the "Projects" section if you're curious!
 
-I also believe that great engineering requires a creative mindset. Whether I'm designing
-pixel art, composing music for side projects, or architecting a backend service, I love
-blending technical precision with creative problem-solving.
+I also believe that great engineering requires a creative mindset. Whether I'm designing pixel art, composing music for side projects, or architecting a backend service, I love blending technical precision with creative problem-solving.
 
-Most importantly, as a Christian, my faith is at the core of who I am and how I approach
-my career. I view software engineering not just as a job, but as an opportunity to serve
-others, build community, and help advance God's Kingdom.
+Most importantly, as a Christian, my faith is at the core of who I am and how I approach my career. I view software engineering not just as a job, but as an opportunity to serve others, build community, and help advance God's Kingdom.
 
-Overall, I’m always excited to learn, experiment, and build things that make a
-meaningful impact. I can’t wait to see what complex challenges I get to tackle next!
-Feel free to reach out if you’d like to chat, collaborate, or just connect!
+Overall, I’m always excited to learn, experiment, and build things that make a meaningful impact. I can’t wait to see what complex challenges I get to tackle next! Feel free to reach out if you’d like to chat, collaborate, or just connect!
