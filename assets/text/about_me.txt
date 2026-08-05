@@ -1,10 +1,27 @@
 <strong>Hey there!</strong>
-I'm a software engineer at Microsoft, currently diving deep into backend development and security. I graduated in 2023 with a degree in Computer Science, but my coding journey actually started when I was around 10 years old and started making games with Flash!
+I'm a software engineer at Microsoft, currently diving deep into backend systems, cloud
+architecture, and security. I graduated in 2023 with a degree in Computer Science, but
+my coding journey actually started when I was around 10 years old, building small games
+with Flash.
 
-Game development is my true passion. I’ve published a few games, won some awards, and I'm constantly working toward my ultimate dream: making games full-time!
+While game development was my first love and remains a strong creative outlet, it
+ultimately sparked a lifelong passion for solving complex technical problems and
+building robust software.
 
-What makes me unique as a developer is that I’m always pushing myself to learn and innovate. For example, I don't just build games—I built my own game engine and framework (called FRUG) to give me more control and flexibility. You can check it out in the "Projects" section if you're curious!
+What drives me as a developer is a constant desire to learn, innovate, and understand
+how things work under the hood. For example, rather than just relying on existing tools
+for my projects, I built my own framework from scratch (called FRUG) to gain deeper
+control and flexibility over the system architecture. You can check it out in the
+"Projects" section if you're curious!
 
-But hey, I’m not just a programmer. I love designing my own pixel art (even though I’m no professional artist), and I enjoy composing the music for my games too. It’s been great to merge those worlds.
+I also believe that great engineering requires a creative mindset. Whether I'm designing
+pixel art, composing music for side projects, or architecting a backend service, I love
+blending technical precision with creative problem-solving.
 
-Overall, I’m always excited to learn, experiment, and create. I can’t wait to see where my game development journey takes me next! Feel free to reach out if you’d like to chat, collaborate, or just connect!
+Most importantly, as a Christian, my faith is at the core of who I am and how I approach
+my career. I view software engineering not just as a job, but as an opportunity to serve
+others, build community, and help advance God's Kingdom.
+
+Overall, I’m always excited to learn, experiment, and build things that make a
+meaningful impact. I can’t wait to see what complex challenges I get to tackle next!
+Feel free to reach out if you’d like to chat, collaborate, or just connect!
