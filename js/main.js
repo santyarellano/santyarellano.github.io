@@ -123,6 +123,8 @@ const experienceData = [
     {
         "Title": "Software Engineering Intern",
         "Company": "Oracle",
+        // Font Awesome has no Oracle logo; this is the Simple Icons (CC0) one
+        "iconSvg": '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.412 4.412h-8.82a7.588 7.588 0 0 0-.008 15.176h8.828a7.588 7.588 0 0 0 0-15.176zm-.193 12.502H7.786a4.915 4.915 0 0 1 0-9.828h8.433a4.914 4.914 0 1 1 0 9.828z"/></svg>',
         "StartDate": "Sep 2021",
         "EndDate": "Mar 2022",
         "IsCurrent": false,
@@ -137,34 +139,105 @@ const experienceData = [
         "EndDate": "Aug 2022",
         "IsCurrent": false,
         "Location": "Remote",
-        "Description": "Worked the chats platform team. Implemented the button to scroll to the bottom in a conversation, and pin conversation features. Also improved the way tweets were displayed in a conversation. Usually worked with Kotlin, Java, and XML."
+        "Description": "Worked on the chats platform team. Implemented the button to scroll to the bottom in a conversation, and pin conversation features. Also improved the way tweets were displayed in a conversation. Usually worked with Kotlin, Java, and XML."
     }
 ];
 // ================== DATA ==================
 
 function loadAboutMeText() {
-    const url = 'https://raw.githubusercontent.com/santyarellano/santyarellano.github.io/refs/heads/master/assets/text/about_me.txt';
+    const url = 'assets/text/about_me.txt';
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            const formattedText = data.replace(/\n/g, '<br>').replace(/\r/g, '');
-            document.getElementById("about-me-text").innerHTML = formattedText;
+            const formattedText = data.replace(/\r/g, '').replace(/\n/g, '<br>');
+            setupCollapsibleText(document.getElementById("about-me-text"), formattedText, 40);
         })
         .catch(error => console.error('Error loading file:', error));
+}
+
+// Shows the first `maxWords` words of `html` with a "read more" toggle to expand it.
+function setupCollapsibleText(container, html, maxWords) {
+    const full = document.createElement('div');
+    full.innerHTML = html;
+
+    const preview = document.createElement('div');
+    const state = { remaining: maxWords };
+    copyFirstWords(full, preview, state);
+
+    // Nothing to collapse if the whole text fits in the preview
+    if (state.remaining > 0) {
+        container.innerHTML = html;
+        return;
+    }
+
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'read-more-btn';
+    toggle.setAttribute('aria-controls', container.id);
+
+    let expanded = false;
+    const render = () => {
+        container.innerHTML = '';
+        if (expanded) {
+            container.append(...full.cloneNode(true).childNodes, ' ');
+            toggle.textContent = 'show less';
+        } else {
+            container.append(...preview.cloneNode(true).childNodes, '... ');
+            toggle.textContent = 'read more';
+        }
+        toggle.setAttribute('aria-expanded', expanded);
+        container.appendChild(toggle);
+    };
+
+    toggle.addEventListener('click', () => {
+        expanded = !expanded;
+        render();
+        if (!expanded) {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    render();
+}
+
+// Copies nodes from `source` into `target` until `state.remaining` words have been copied,
+// keeping inline markup (e.g. <strong>, <br>) intact.
+function copyFirstWords(source, target, state) {
+    for (const node of source.childNodes) {
+        if (state.remaining <= 0) return;
+
+        if (node.nodeType === Node.TEXT_NODE) {
+            const words = node.textContent.match(/\S+\s*/g) || [];
+            const taken = words.slice(0, state.remaining);
+            state.remaining -= taken.length;
+            let text = taken.join('');
+            if (state.remaining <= 0) text = text.trimEnd();
+            target.appendChild(document.createTextNode(text));
+        } else {
+            const clone = node.cloneNode(false);
+            target.appendChild(clone);
+            copyFirstWords(node, clone, state);
+        }
+    }
 }
 
 function loadSocialMediaIcons() {
     const socialMediaContainer = document.getElementById('social-media');
     socialMediaData.forEach(item => {
+        const linkElement = document.createElement('a');
+        linkElement.href = item.link;
+        linkElement.target = '_blank';
+        linkElement.rel = 'noopener';
+        linkElement.setAttribute('aria-label', item.Item);
+        linkElement.title = item.Item;
+
         const iconElement = document.createElement('i');
-        iconElement.className = `fa ${item.icon}`;
+        iconElement.className = item.icon;
         iconElement.style.color = item.color;
-        iconElement.style.margin = '0 10px';
-        iconElement.style.cursor = 'pointer';
-        iconElement.addEventListener('click', () => {
-            window.open(item.link, '_blank');
-        });
-        socialMediaContainer.appendChild(iconElement);
+        iconElement.setAttribute('aria-hidden', 'true');
+
+        linkElement.appendChild(iconElement);
+        socialMediaContainer.appendChild(linkElement);
     });
 }
 
@@ -212,6 +285,7 @@ function loadProjects() {
 function loadExperience() {
     const experienceContainer = document.getElementById('experience-container');
     experienceData.forEach(experience => {
+        const icon = experience.iconSvg || `<i class="${experience.icon}"></i>`;
         const dates = experience.IsCurrent ? `${experience.StartDate} - Present` : `${experience.StartDate} - ${experience.EndDate}`;
         const experienceElement = document.createElement('div');
         experienceElement.className = 'col-md-4 mb-4';
@@ -219,7 +293,7 @@ function loadExperience() {
             <div class="card text-center h-100">
                 <div class="card-body">
                     <h4 class="card-title">
-                        <i class="${experience.icon}"></i>
+                        ${icon}
                         <strong>${experience.Company}</strong>
                     </h4>
                     <h5 class="card-subtitle mb-2 text-muted">${experience.Title}</h5>

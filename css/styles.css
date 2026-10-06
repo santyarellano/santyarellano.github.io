@@ -14,14 +14,34 @@ body {
     /* Ensure items are displayed horizontally */
 }
 
-#social-media i {
-    font-size: 20px;
+#social-media a {
     margin: 0 10px;
 }
 
+#social-media i {
+    font-size: 20px;
+}
+
 /* -------------- CLASSES -------------- */
+/* Bootstrap 5 dropped .text-justify */
+.text-justify {
+    text-align: justify;
+}
+
+/* Keep Bootstrap 4's muted gray; 5.3's default is too dark on black cards */
+.text-muted {
+    color: #6c757d !important;
+}
+
 .about-card {
     padding: 1rem 1rem;
+}
+
+.brand-svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: currentColor;
 }
 
 .button3d {
@@ -96,6 +116,20 @@ body {
     border-radius: 35%;
     z-index: -1;
     animation: moveUpDown infinite alternate ease-in-out, fadeIn 1s forwards;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    color: rgb(178, 219, 251);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    color: hsl(222, 100%, 70%);
 }
 
 .profile-pic {
